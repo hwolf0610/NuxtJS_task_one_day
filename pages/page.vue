@@ -2,10 +2,7 @@
   <div class="container">
     <div>
       <logo />
-      <h1 class="title">Hello_world</h1>
-      <nuxt-link :to="{ path: '/page', query: { id: 'Page1'}}">
-        <h2 class="subtitle">My Page</h2>
-      </nuxt-link>
+      <h1 class="title">{{$route.query.id}}</h1>
     </div>
   </div>
 </template>
